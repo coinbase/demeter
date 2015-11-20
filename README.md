@@ -8,10 +8,17 @@ Demeter is a command line tool for managing security groups across multiple AWS 
 
 ## Installation
 
+HighSecurity install
+```shell
+wget https://raw.githubusercontent.com/coinbase/demeter/master/certs/coinbase.pem
+gem cert --add coinbase.pem
+gem install demeter-cli --trust-policy HighSecurity
+```
+
+Regular install
 ```shell
 % gem install demeter-cli
 ```
-
 
 ## Usage
 

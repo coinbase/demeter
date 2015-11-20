@@ -1,4 +1,4 @@
-# Demeter
+# Demeter [![Circle CI](https://circleci.com/gh/coinbase/demeter.svg?style=svg)](https://circleci.com/gh/coinbase/demeter)
 
 Demeter is a command line tool for managing security groups across multiple AWS environments. Demeter was written with the following goals:
 *  __Stateless.__  EC2 tags are used to store all metadata about security groups.  This makes it easy for collaborators to make changes to security groups.

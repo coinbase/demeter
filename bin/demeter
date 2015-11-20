@@ -1,0 +1,11 @@
+#!/usr/bin/env ruby
+require 'demeter'
+require 'demeter/cli'
+require 'dotenv'
+
+begin
+  Demeter::Cli.start
+rescue => e
+  puts "Error during processing: #{$!}"
+  puts "Backtrace:\n\t#{e.backtrace.join("\n\t")}" if ARGV.include?('--debug')
+end

@@ -1,0 +1,17 @@
+security_groups:
+  - name: ec2::infra/apollo::web
+    vpc_id: <% env.vpc_id %>
+    ingress:
+      - from_port: 22
+        to_port: 22
+        protocol: tcp
+        cidr_blocks:
+          - 10.0.0.0/8
+          - 10.20.0.0/8
+          - 10.10.0.0/24
+          - <% global.var_cidr_blocks %>
+        source_security_groups: 
+          - sg-12345
+    egress:
+      - from_port: -1
+        to_port: -1  

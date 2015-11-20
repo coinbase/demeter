@@ -1,0 +1,6 @@
+.env*
+*.sw*
+pkg/
+.DS_Store
+coverage/
+*.gem

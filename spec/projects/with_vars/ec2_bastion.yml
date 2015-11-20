@@ -1,0 +1,12 @@
+security_groups:
+  - name: <% ec2::infra/bastion %>
+    vpc_id: <% var.vpc_id %>
+    ingress:
+      - from_port: 22
+        to_port: 22
+        protocol: tcp
+        cidr_blocks:
+          - 10.0.0.0/8
+    egress:
+      - from_port: -1
+        to_port: -1  

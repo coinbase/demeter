@@ -4,7 +4,7 @@ Demeter is a command line tool for managing security groups across multiple AWS 
 *  __Stateless.__  EC2 tags are used to store all metadata about security groups.  This makes it easy for collaborators to make changes to security groups.
 *  __Variables.__  Provides a flexible way to define global and per-environment variables to be used in all templates.
 *  __Multiple AWS Accounts.__  Maintain a naming scheme for your security groups that can be applied to any region or AWS account.
-*  __Infrastructure as code.__  My maintaining your security groups using a demeter repository makes them easy to edit and collaborate on.
+*  __Infrastructure as code.__  By maintaining your security groups using a demeter repository makes them easy to edit and collaborate on.
 
 ## Installation
 
